@@ -1,7 +1,5 @@
-html,
-body,
-#container {
-  width: 100%;
+html, body, #container {
+  max-width: 100%;
   height: 100%;
   font-family: Secular One;
 }
@@ -126,6 +124,8 @@ body,
 }
 .side {
   grid-area: side;
+  display: flex;
+  flex-direction: column;
 }
 .footer {
   grid-area: footer;
@@ -134,3 +134,81 @@ body,
 #main-title {
   margin: 0px;
 }
+.side > div > div {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+#supplements div {
+  border: 1px solid red;
+}
+#canvas {
+  border:1px solid green;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+#canvas > div {
+  width: 150px;
+  margin: auto;
+}
+#canvas > div > div {
+  width: 150px;
+}
+#top-bun, #bottom-bun {
+  background-color:#f3cba5;
+  height: 50px;
+  margin: 2px;
+}
+#top-bun {
+  border-radius: 30% 30% 0% 0%;
+}
+#bottom-bun {
+  border-radius: 0% 0% 30% 30%;
+}
+
+#canvas-lettuce > * {
+  background-color: rgb(124, 204, 5);
+  margin: 2px;
+  height: 10px;
+}
+#canvas-onion > * {
+  background-color: rgb(241, 238, 192);
+  margin: 2px;
+  height: 20px;
+}
+#canvas-tomato > * {
+  background-color: tomato;
+  margin: 2px;
+  height: 20px;
+}
+#canvas-cheese > * {
+  background-color: rgb(255, 192, 19);
+  margin: 2px;
+  height: 10px;
+}
+#canvas-pickles > * {
+  background-color: rgb(60, 97, 5);
+  margin: 2px;
+  height: 10px;
+}
+#canvas-meat > * {
+  background-color: rgb(87, 67, 29);
+  margin: 2px;
+  height: 50px;
+}
+
+#canvas-vegan > * {
+  background-color: rgb(78, 87, 29);
+  margin: 2px;
+  height: 50px;
+}
+

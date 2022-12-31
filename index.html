@@ -19,11 +19,11 @@
 <body>
     <div id="container">
         <div id="sections">
-            <section class="logo"></section>
-            <section class="header">
+            <section id="logo" class="logo"></section>
+            <section id="header" class="header">
                 <h1 id="main-title">האתר הנפלא שלי</h1>
             </section>
-            <section class="menu">
+            <section id="menu" class="menu">
                 <div class="topnav" id="myTopnav">
                     <a href="#home" class="active">Home</a>
                     <a href="#news">News</a>
@@ -36,16 +36,44 @@
                     </a>
                 </div>
             </section>
-            <section class="main">Main</section>
-            <section class="side">
-                <object id="formObject" data="form.html" width="100%" type="text/html">
-                    Alternative Content
-                </object>
+            <section id="main" class="main">
+                <div id="canvas">
+                    <div id="top-bun"></div>
+                    <div id="canvas-supplements">
+                        <div id="canvas-lettuce"></div>
+                        <div id="canvas-onion"></div>
+                        <div id="canvas-tomato"></div>
+                        <div id="canvas-cheese"></div>
+                        <div id="canvas-pickles"></div>
+                    </div>
+                
+                    <div id="canvas-patties">
+                        <div id="canvas-vegan"></div>
+                        <div id="canvas-meat"></div>
+                    </div>
+                    <div id="bottom-bun"></div>
+                </div>
             </section>
-            <section class="footer">Footer</section>
+            <section id="side" class="side">
+                <div id="patties" class ="choice">
+                    <h3>סוג ההמבורגר</h3>
+                    <div id="vegan"><p onclick="addElement('canvas-vegan')">add</p><label for="vegan">vegan</label><p onclick="removeElement('canvas-vegan')">remove</p></div>
+                    <div id="meat"><p onclick="addElement('canvas-meat')">add</p><label for="meat">meat</label><p onclick="removeElement('canvas-meat')">remove</p></div>
+                </div>
+                <div id="supplements" class ="choice">
+                    <h3>תוספות</h3>
+                    <div id="lettuce"><p onclick="addElement('canvas-lettuce',2.5)">add</p><label for="lettuce">lettuce</label><p onclick="removeElement('canvas-lettuce',2.5)">remove</p></div>
+                    <div id="onion"><p onclick="addElement('canvas-onion',2.5)">add</p><label for="onion">onion</label><p onclick="removeElement('canvas-onion',2.5)">remove</p></div>
+                    <div id="tomato"><p onclick="addElement('canvas-tomato',2.5)">add</p><label for="tomato">tomato</label><p onclick="removeElement('canvas-tomato',2.5)">remove</p></div>
+                    <div id="cheese"><p onclick="addElement('canvas-cheese',3)">add</p><label for="cheese">cheese</label><p onclick="removeElement('canvas-cheese',3)">remove</p></div>
+                    <div id="pickles"><p onclick="addElement('canvas-pickles',0.5)">add</p><label for="pickles">pickles</label><p onclick="removeElement('canvas-pickles',0.5)">remove</p></div>
+                </div>
+            </section>
+            <section id="footer" class="footer">
+                <button onclick="topFunction()" id="backToTop" title="Go to top">Top</button>
+            </section>
         </div>
     </div>
-    <button onclick="topFunction()" id="backToTop" title="Go to top">Top</button>
 </body>
 
 </html>
