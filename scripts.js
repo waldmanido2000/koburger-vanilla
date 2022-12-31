@@ -34,6 +34,7 @@ function topFunction() {
 // back to top ends //
 
 let totalCost = 0;
+const priceElement = document.getElementById("total");
 // create elements in dom //
 const koburgerUi = document.getElementById("main");
 function addElement(parentId, cost) {
@@ -44,7 +45,7 @@ function addElement(parentId, cost) {
   parent.appendChild(element);
   parent.style.height = 'fit-content';
   totalCost = totalCost + cost;
-  alert(totalCost);
+  reprice()
 }
 // remove elements in dom //
 function removeElement(parentId, cost) {
@@ -53,7 +54,10 @@ function removeElement(parentId, cost) {
   if(numOfChildren>0){
     parent.removeChild(parent.lastChild);
     totalCost = totalCost - cost;
+    reprice()
   }
 }
 //price calculation //
-
+function reprice() {
+  priceElement.innerHTML = totalCost;
+}

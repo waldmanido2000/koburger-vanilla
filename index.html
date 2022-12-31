@@ -21,7 +21,7 @@
         <div id="sections">
             <section id="logo" class="logo"></section>
             <section id="header" class="header">
-                <h1 id="main-title">האתר הנפלא שלי</h1>
+                <h1 id="main-title">koburgers and more</h1>
             </section>
             <section id="menu" class="menu">
                 <div class="topnav" id="myTopnav">
@@ -53,18 +53,22 @@
                     </div>
                     <div id="bottom-bun"></div>
                 </div>
+                <div id="finish">
+                    <p id="sum">total price to pay is: <span id="total">0.0</span></p>
+                    <input type="button" value="confirm purchase"/>
+                </div>
             </section>
             <section id="side" class="side">
                 <div id="patties" class ="choice">
                     <h3>סוג ההמבורגר</h3>
-                    <div id="vegan"><p onclick="addElement('canvas-vegan')">add</p><label for="vegan">vegan</label><p onclick="removeElement('canvas-vegan')">remove</p></div>
-                    <div id="meat"><p onclick="addElement('canvas-meat')">add</p><label for="meat">meat</label><p onclick="removeElement('canvas-meat')">remove</p></div>
+                    <div id="vegan"><p onclick="addElement('canvas-vegan',17.5)">add</p><label for="vegan">vegan</label><p onclick="removeElement('canvas-vegan',17.5)">remove</p></div>
+                    <div id="meat"><p onclick="addElement('canvas-meat',15.5)">add</p><label for="meat">meat</label><p onclick="removeElement('canvas-meat',15.5)">remove</p></div>
                 </div>
                 <div id="supplements" class ="choice">
                     <h3>תוספות</h3>
-                    <div id="lettuce"><p onclick="addElement('canvas-lettuce',2.5)">add</p><label for="lettuce">lettuce</label><p onclick="removeElement('canvas-lettuce',2.5)">remove</p></div>
-                    <div id="onion"><p onclick="addElement('canvas-onion',2.5)">add</p><label for="onion">onion</label><p onclick="removeElement('canvas-onion',2.5)">remove</p></div>
-                    <div id="tomato"><p onclick="addElement('canvas-tomato',2.5)">add</p><label for="tomato">tomato</label><p onclick="removeElement('canvas-tomato',2.5)">remove</p></div>
+                    <div id="lettuce"><p onclick="addElement('canvas-lettuce',0.5)">add</p><label for="lettuce">lettuce</label><p onclick="removeElement('canvas-lettuce',0.5)">remove</p></div>
+                    <div id="onion"><p onclick="addElement('canvas-onion',0.5)">add</p><label for="onion">onion</label><p onclick="removeElement('canvas-onion',0.5)">remove</p></div>
+                    <div id="tomato"><p onclick="addElement('canvas-tomato',1.5)">add</p><label for="tomato">tomato</label><p onclick="removeElement('canvas-tomato',1.5)">remove</p></div>
                     <div id="cheese"><p onclick="addElement('canvas-cheese',3)">add</p><label for="cheese">cheese</label><p onclick="removeElement('canvas-cheese',3)">remove</p></div>
                     <div id="pickles"><p onclick="addElement('canvas-pickles',0.5)">add</p><label for="pickles">pickles</label><p onclick="removeElement('canvas-pickles',0.5)">remove</p></div>
                 </div>
