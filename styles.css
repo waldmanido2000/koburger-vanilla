@@ -116,6 +116,10 @@ body,
 }
 .header {
   grid-area: header;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
 }
 .menu {
   grid-area: menu;
@@ -135,6 +139,7 @@ body,
 /* grid  main section */
 #main-title {
   margin: 0px;
+  font-size: 2em;
 }
 .side > div > div {
   display: flex;
