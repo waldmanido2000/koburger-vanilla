@@ -8,7 +8,7 @@
     <meta property="og:description" content="דף האינטרנט המגניב שלי" />
     <meta property="og:url" content="https://tbd/" />
     <meta property="og:site_name" content="עידו ולדמן" />
-    <title>כותרת מרשימה</title>
+    <title>burgers like a boss</title>
     <style type="text/css">
     </style>
     <link rel='stylesheet' href='styles.css' type='text/css' />
@@ -23,7 +23,7 @@
             <section id="header" class="header">
                 <h1 id="main-title">koburgers and more</h1>
             </section>
-            <section id="menu" class="menu">
+            <!-- <section id="menu" class="menu">
                 <div class="topnav" id="myTopnav">
                     <a href="#home" class="active">Home</a>
                     <a href="#news">News</a>
@@ -35,7 +35,7 @@
                         <div class="hamburger"></div>
                     </a>
                 </div>
-            </section>
+            </section> -->
             <section id="main" class="main">
                 <div id="canvas">
                     <div id="top-bun"></div>
@@ -54,18 +54,20 @@
                     <div id="bottom-bun"></div>
                 </div>
                 <div id="finish">
+                    <label for="total"></label>
                     <p id="sum">total price to pay is: <span id="total">0.0</span></p>
-                    <input type="button" value="confirm purchase"/>
+                    <label for="confirm"></label>
+                    <input type="button" id="confirm" value="confirm purchase" onclick="confirm()" />
                 </div>
             </section>
             <section id="side" class="side">
                 <div id="patties" class ="choice">
-                    <h3>סוג ההמבורגר</h3>
+                    <h3>choose your patties</h3>
                     <div id="vegan"><p onclick="addElement('canvas-vegan',17.5)">add</p><label for="vegan">vegan</label><p onclick="removeElement('canvas-vegan',17.5)">remove</p></div>
                     <div id="meat"><p onclick="addElement('canvas-meat',15.5)">add</p><label for="meat">meat</label><p onclick="removeElement('canvas-meat',15.5)">remove</p></div>
                 </div>
                 <div id="supplements" class ="choice">
-                    <h3>תוספות</h3>
+                    <h3>choose your supplements</h3>
                     <div id="lettuce"><p onclick="addElement('canvas-lettuce',0.5)">add</p><label for="lettuce">lettuce</label><p onclick="removeElement('canvas-lettuce',0.5)">remove</p></div>
                     <div id="onion"><p onclick="addElement('canvas-onion',0.5)">add</p><label for="onion">onion</label><p onclick="removeElement('canvas-onion',0.5)">remove</p></div>
                     <div id="tomato"><p onclick="addElement('canvas-tomato',1.5)">add</p><label for="tomato">tomato</label><p onclick="removeElement('canvas-tomato',1.5)">remove</p></div>
